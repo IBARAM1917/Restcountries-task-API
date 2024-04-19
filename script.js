@@ -75,7 +75,7 @@ async function buttonClick(lat, long, weatherTextId, btnID) {
                 <p class="weather"><b>Weather Data Not Available</b></p> 
             `;
         }
-        const APIURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon="+ long +"&appid=6f3505160a1685507f3841703b8e968d";
+        const APIURL = "https://api.openweathermap.org/data/2.5/weather?lat=" + lat + "&lon="+ long +"&appid=a7d8f211f43a3f4cce7f895fd1daba95";
         let weatherAPIResult = await fetch(APIURL);
         let weatherData = await weatherAPIResult.json();
         const iconURL = "http://openweathermap.org/img/w/"+ weatherData.weather[0].icon + ".png";
