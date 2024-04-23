@@ -33,8 +33,7 @@ window.onload = getData();
 
 const displayData = (objData) => {
     let content = document.getElementById("content");
-
-  
+ 
     content.innerHTML += `
     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 g-4">
         <div class="card h-100">
